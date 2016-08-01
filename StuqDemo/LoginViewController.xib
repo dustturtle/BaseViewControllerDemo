@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efb-XO-fxm" userLabel="accountLabel">
+                    <rect key="frame" x="64" y="107" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRz-8B-WEN" userLabel="passwordLabel">
+                    <rect key="frame" x="64" y="180" width="34" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJZ-cw-Loq" userLabel="accountTF">
+                    <rect key="frame" x="139" y="107" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="KP2-J4-MuD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7A-GK-Uxa" userLabel="passwordTF">
+                    <rect key="frame" x="139" y="176" width="100" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4Be-fA-LgG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xv0-k5-HLQ" userLabel="loginLabel">
+                    <rect key="frame" x="173" y="319" width="30" height="30"/>
+                    <state key="normal" title="登录"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bJZ-cw-Loq" firstAttribute="leading" secondItem="efb-XO-fxm" secondAttribute="trailing" constant="41" id="2gQ-Sx-Umo"/>
+                <constraint firstItem="E7A-GK-Uxa" firstAttribute="leading" secondItem="MRz-8B-WEN" secondAttribute="trailing" constant="41" id="FUr-1B-pOW"/>
+                <constraint firstItem="efb-XO-fxm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="64" id="IrW-bW-qaL"/>
+                <constraint firstItem="MRz-8B-WEN" firstAttribute="top" secondItem="efb-XO-fxm" secondAttribute="bottom" constant="52" id="Zvr-Ql-tv7"/>
+                <constraint firstItem="efb-XO-fxm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="107" id="adc-wb-Taa"/>
+                <constraint firstItem="MRz-8B-WEN" firstAttribute="leading" secondItem="efb-XO-fxm" secondAttribute="leading" id="cyT-xL-VQ4"/>
+                <constraint firstItem="E7A-GK-Uxa" firstAttribute="top" secondItem="bJZ-cw-Loq" secondAttribute="bottom" constant="39" id="lKQ-eU-koO"/>
+                <constraint firstItem="bJZ-cw-Loq" firstAttribute="top" secondItem="efb-XO-fxm" secondAttribute="top" id="rIg-OS-yM9"/>
+                <constraint firstItem="xv0-k5-HLQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uTn-Xz-TJi"/>
+                <constraint firstItem="xv0-k5-HLQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="y00-QF-1K6"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>
