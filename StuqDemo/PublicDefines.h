@@ -12,8 +12,8 @@
 
 typedef NS_ENUM(NSInteger, CustomThemeType){
     
-    CustomThemeTypeWhite =0,
-    CustomThemeTypeBlue = 1,
+    CustomThemeTypeWhite = 0,
+    CustomThemeTypeColor = 1,
     CustomThemeTypeBlack = 2
 };
 

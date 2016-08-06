@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6867DE041AE48327A32A60AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86178A58E5949DA18FFBA1A /* libPods.a */; };
+		8E02475E1D55897900859EF9 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02475D1D55897900859EF9 /* UIView+Toast.m */; };
+		8E07F7A01D55C67C0069FC07 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F79E1D55C67C0069FC07 /* WelcomeViewController.m */; };
+		8E07F7A11D55C67C0069FC07 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E07F79F1D55C67C0069FC07 /* WelcomeViewController.xib */; };
+		8E07F7A41D55D06B0069FC07 /* stuq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E07F7A31D55D06B0069FC07 /* stuq@2x.png */; };
 		8E0BEAA51D4DBB57008FC2DE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BEAA31D4DBB57008FC2DE /* LoginViewController.m */; };
 		8E0BEAA61D4DBB57008FC2DE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0BEAA41D4DBB57008FC2DE /* LoginViewController.xib */; };
 		8EF576D71D4C9D16008F4CED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EF576D91D4C9D16008F4CED /* Localizable.strings */; };
@@ -18,12 +22,16 @@
 		8EFF509B1D4C80F3001196B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF509A1D4C80F3001196B1 /* AppDelegate.m */; };
 		8EFF50A31D4C80F3001196B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF50A21D4C80F3001196B1 /* Assets.xcassets */; };
 		8EFF50A61D4C80F3001196B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF50A41D4C80F3001196B1 /* LaunchScreen.storyboard */; };
-		8EFF50B01D4C82FF001196B1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF50AE1D4C82FF001196B1 /* TestViewController.m */; };
-		8EFF50B11D4C82FF001196B1 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF50AF1D4C82FF001196B1 /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37024257500629DE7EAA1930 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8E02475C1D55897900859EF9 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		8E02475D1D55897900859EF9 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		8E07F79D1D55C67C0069FC07 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		8E07F79E1D55C67C0069FC07 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		8E07F79F1D55C67C0069FC07 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		8E07F7A31D55D06B0069FC07 /* stuq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stuq@2x.png"; sourceTree = "<group>"; };
 		8E0BEAA21D4DBB57008FC2DE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		8E0BEAA31D4DBB57008FC2DE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8E0BEAA41D4DBB57008FC2DE /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -43,9 +51,6 @@
 		8EFF50A21D4C80F3001196B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EFF50A51D4C80F3001196B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EFF50A71D4C80F3001196B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EFF50AD1D4C82FF001196B1 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		8EFF50AE1D4C82FF001196B1 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
-		8EFF50AF1D4C82FF001196B1 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		A39B66BD8AEBB9EFEC355BC1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B86178A58E5949DA18FFBA1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +74,23 @@
 				37024257500629DE7EAA1930 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E02475B1D55897900859EF9 /* toast */ = {
+			isa = PBXGroup;
+			children = (
+				8E02475C1D55897900859EF9 /* UIView+Toast.h */,
+				8E02475D1D55897900859EF9 /* UIView+Toast.m */,
+			);
+			path = toast;
+			sourceTree = "<group>";
+		};
+		8E07F7A21D55D06B0069FC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E07F7A31D55D06B0069FC07 /* stuq@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		8EF576DC1D4C9DD5008F4CED /* Global */ = {
@@ -119,6 +141,8 @@
 		8EFF50951D4C80F3001196B1 /* StuqDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8E07F7A21D55D06B0069FC07 /* Resources */,
+				8E02475B1D55897900859EF9 /* toast */,
 				8EF576E41D4CA6DD008F4CED /* Connection */,
 				8EF576E01D4C9E7F008F4CED /* Base */,
 				8EF576DC1D4C9DD5008F4CED /* Global */,
@@ -128,13 +152,13 @@
 				8EFF50A41D4C80F3001196B1 /* LaunchScreen.storyboard */,
 				8EFF50A71D4C80F3001196B1 /* Info.plist */,
 				8EFF50961D4C80F3001196B1 /* Supporting Files */,
-				8EFF50AD1D4C82FF001196B1 /* TestViewController.h */,
-				8EFF50AE1D4C82FF001196B1 /* TestViewController.m */,
-				8EFF50AF1D4C82FF001196B1 /* TestViewController.xib */,
 				8EF576D21D4C8EAD008F4CED /* PublicDefines.h */,
 				8E0BEAA21D4DBB57008FC2DE /* LoginViewController.h */,
 				8E0BEAA31D4DBB57008FC2DE /* LoginViewController.m */,
 				8E0BEAA41D4DBB57008FC2DE /* LoginViewController.xib */,
+				8E07F79D1D55C67C0069FC07 /* WelcomeViewController.h */,
+				8E07F79E1D55C67C0069FC07 /* WelcomeViewController.m */,
+				8E07F79F1D55C67C0069FC07 /* WelcomeViewController.xib */,
 			);
 			path = StuqDemo;
 			sourceTree = "<group>";
@@ -217,11 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E07F7A11D55C67C0069FC07 /* WelcomeViewController.xib in Resources */,
 				8E0BEAA61D4DBB57008FC2DE /* LoginViewController.xib in Resources */,
 				8EFF50A61D4C80F3001196B1 /* LaunchScreen.storyboard in Resources */,
+				8E07F7A41D55D06B0069FC07 /* stuq@2x.png in Resources */,
 				8EF576D71D4C9D16008F4CED /* Localizable.strings in Resources */,
 				8EFF50A31D4C80F3001196B1 /* Assets.xcassets in Resources */,
-				8EFF50B11D4C82FF001196B1 /* TestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,11 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E02475E1D55897900859EF9 /* UIView+Toast.m in Sources */,
 				8EF576E31D4C9E7F008F4CED /* BaseViewController.m in Sources */,
-				8EFF50B01D4C82FF001196B1 /* TestViewController.m in Sources */,
 				8EF576E71D4CA6DD008F4CED /* LocalConnection.m in Sources */,
 				8EFF509B1D4C80F3001196B1 /* AppDelegate.m in Sources */,
 				8E0BEAA51D4DBB57008FC2DE /* LoginViewController.m in Sources */,
+				8E07F7A01D55C67C0069FC07 /* WelcomeViewController.m in Sources */,
 				8EFF50981D4C80F3001196B1 /* main.m in Sources */,
 				8EF576DF1D4C9DD5008F4CED /* WQLanguage.m in Sources */,
 			);
@@ -400,12 +426,13 @@
 			baseConfigurationReference = A39B66BD8AEBB9EFEC355BC1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StuqDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = test.StuqDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a1a0815b-b50c-4541-8ccf-6805922e6815";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -415,12 +442,13 @@
 			baseConfigurationReference = 37024257500629DE7EAA1930 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StuqDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = test.StuqDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a1a0815b-b50c-4541-8ccf-6805922e6815";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

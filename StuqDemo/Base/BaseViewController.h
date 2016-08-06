@@ -12,7 +12,7 @@
 //  3. 便捷调用HUD
 //  4. 应用内国际化
 //  5. 页面留存打点 （比如UMENG）
-//  6. 处理全局的通知，比如账号被T出（当前处在任意的页面），自动退回到登陆页
+//  6. 处理全局的通知，比如账号被T出（当前处在任意的页面，这种情况一般都是从server端收到的通知），自动退回到登陆页
 //  7. 应用主题设置，全局修改主题（这里用背景色做演示）
 //
 //  宗旨：全局性viewcontroller可以共有的且应该属于viewcontroller处理范畴内的任务，放到基类来做。
@@ -27,6 +27,8 @@
 
 #import <UIKit/UIKit.h>
 #import "PublicDefines.h"
+#import "UIView+Toast.h"
+#import "WQLanguage.h"
 
 @interface BaseViewController : UIViewController
 

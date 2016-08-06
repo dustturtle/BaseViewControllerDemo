@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController">
+            <connections>
+                <outlet property="colorTheme" destination="Djq-m5-Ht4" id="Rgu-IG-TSZ"/>
+                <outlet property="kickOut" destination="TAQ-Wa-hIQ" id="1ph-ur-wDe"/>
+                <outlet property="startHud" destination="7uT-EH-0Ih" id="Gnu-4D-kgH"/>
+                <outlet property="stopHud" destination="4Jb-cf-csJ" id="utI-rW-TsV"/>
+                <outlet property="switchToChinese" destination="atX-8A-DgJ" id="UTp-t8-IzM"/>
+                <outlet property="switchToEnglish" destination="61p-xM-auj" id="zep-5b-rjC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whiteTheme" destination="PE0-Tg-9Ly" id="O6r-Ro-wJS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atX-8A-DgJ">
+                    <rect key="frame" x="85" y="100" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="bwA-Eg-eLh"/>
+                    </constraints>
+                    <state key="normal" title="切换到中文"/>
+                    <connections>
+                        <action selector="changeToChinese:" destination="-1" eventType="touchUpInside" id="xmR-X4-3yv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61p-xM-auj">
+                    <rect key="frame" x="85" y="146" width="75" height="30"/>
+                    <state key="normal" title="切换到英文"/>
+                    <connections>
+                        <action selector="changeToEnglish:" destination="-1" eventType="touchUpInside" id="B3t-j2-D9v"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE0-Tg-9Ly">
+                    <rect key="frame" x="240" y="100" width="60" height="30"/>
+                    <state key="normal" title="白色主题"/>
+                    <connections>
+                        <action selector="whiteTheme:" destination="-1" eventType="touchUpInside" id="8Zm-Yp-yW4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAQ-Wa-hIQ">
+                    <rect key="frame" x="45" y="200" width="100" height="30"/>
+                    <state key="normal" title="模拟被T出通知"/>
+                    <connections>
+                        <action selector="postKickOut:" destination="-1" eventType="touchUpInside" id="Cmd-Fl-rMM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7uT-EH-0Ih">
+                    <rect key="frame" x="241" y="200" width="59" height="30"/>
+                    <state key="normal" title="开启Hud"/>
+                    <connections>
+                        <action selector="startLoading:" destination="-1" eventType="touchUpInside" id="Er3-Ws-34T"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jb-cf-csJ">
+                    <rect key="frame" x="241" y="247" width="59" height="30"/>
+                    <state key="normal" title="停止Hud"/>
+                    <connections>
+                        <action selector="stopLoading:" destination="-1" eventType="touchUpInside" id="s3h-he-fD7"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stuq.png" translatesAutoresizingMaskIntoConstraints="NO" id="mVx-jW-Tzx">
+                    <rect key="frame" x="68" y="352" width="240" height="265"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="DCC-eV-6KX"/>
+                        <constraint firstAttribute="height" constant="265" id="ELm-Ce-voP"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-m5-Ht4">
+                    <rect key="frame" x="240" y="146" width="60" height="30"/>
+                    <state key="normal" title="彩色主题"/>
+                    <connections>
+                        <action selector="colorTheme:" destination="-1" eventType="touchUpInside" id="hNS-gg-Oed"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Djq-m5-Ht4" secondAttribute="trailing" constant="75" id="1h4-ww-uv1"/>
+                <constraint firstAttribute="trailing" secondItem="PE0-Tg-9Ly" secondAttribute="trailing" constant="75" id="8G4-hV-fvw"/>
+                <constraint firstItem="PE0-Tg-9Ly" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="A5G-s9-9g2"/>
+                <constraint firstItem="4Jb-cf-csJ" firstAttribute="top" secondItem="7uT-EH-0Ih" secondAttribute="bottom" constant="17" id="C4l-4f-Lj6"/>
+                <constraint firstItem="61p-xM-auj" firstAttribute="top" secondItem="atX-8A-DgJ" secondAttribute="bottom" constant="16" id="CWc-CO-e6d"/>
+                <constraint firstAttribute="trailing" secondItem="7uT-EH-0Ih" secondAttribute="trailing" constant="75" id="Qzv-cw-oAH"/>
+                <constraint firstItem="mVx-jW-Tzx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZHT-6x-hFw"/>
+                <constraint firstItem="atX-8A-DgJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="agB-yo-VpR"/>
+                <constraint firstItem="Djq-m5-Ht4" firstAttribute="top" secondItem="PE0-Tg-9Ly" secondAttribute="bottom" constant="16" id="cq3-Su-len"/>
+                <constraint firstAttribute="trailing" secondItem="4Jb-cf-csJ" secondAttribute="trailing" constant="75" id="dJ4-lm-hcP"/>
+                <constraint firstItem="7uT-EH-0Ih" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="hzJ-m7-JEQ"/>
+                <constraint firstItem="61p-xM-auj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="jjR-Eq-xRL"/>
+                <constraint firstItem="atX-8A-DgJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="85" id="l2o-ah-Qmc"/>
+                <constraint firstItem="TAQ-Wa-hIQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="qKR-OP-Ck3"/>
+                <constraint firstItem="TAQ-Wa-hIQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="45" id="qrT-Zl-9uX"/>
+                <constraint firstAttribute="bottom" secondItem="mVx-jW-Tzx" secondAttribute="bottom" constant="50" id="r4M-m3-Sgc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="stuq.png" width="265" height="240"/>
+    </resources>
+</document>

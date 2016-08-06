@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LocalConnection.h"
-#import "TestViewController.h"
 #import "LoginViewController.h"
+#import "WQLanguage.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +22,8 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [WQLanguage setupBundle];
     
     [GLocalConnection startNotifier];
     

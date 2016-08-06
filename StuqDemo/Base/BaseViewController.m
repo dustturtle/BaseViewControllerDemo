@@ -106,11 +106,9 @@
 {
     if (self.innerHUD == nil)
     {
-        self.innerHUD = [MBProgressHUD showHUDAddedTo:[[UIApplication sharedApplication].windows lastObject] animated:YES];
+        self.innerHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         self.innerHUD.userInteractionEnabled = NO;
         self.innerHUD.mode = MBProgressHUDModeCustomView;
-        
-        // gzw MBProgressHUDModeAnnularDeterminate
     }
 }
 
@@ -178,7 +176,8 @@
 
 - (void)themeChanged:(NSNotification *)notification
 {
-    [self reloadUIForTheme:CustomThemeTypeWhite];
+    CustomThemeType themeType = [notification.object integerValue];
+    [self reloadUIForTheme:themeType];
 }
 
 - (void)forceLogout:(NSNotification *)notification

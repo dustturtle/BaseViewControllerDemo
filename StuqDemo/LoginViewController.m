@@ -7,8 +7,15 @@
 //
 
 #import "LoginViewController.h"
+#import "WelcomeViewController.h"
 
 @interface LoginViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topDistance;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginYRelation;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginXRetion;
+
+@property (weak, nonatomic) IBOutlet UITextField *accountInput;
+@property (weak, nonatomic) IBOutlet UITextField *passwordInput;
 
 @end
 
@@ -17,21 +24,71 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+    backItem.title = GLOBAL_STR(@"返回");
+    
+    self.navigationItem.backBarButtonItem = backItem;
+    self.title = GLOBAL_STR(@"登录");
+    
+    [self.accountInput becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)login:(id)sender
+{
+    if ([self.accountInput.text isEqualToString:@"stuq"] && [self.passwordInput.text isEqualToString:@"stuq"])
+    {
+        // 登陆成功
+        WelcomeViewController *welcomeVC = [[WelcomeViewController alloc] init];
+        [self.navigationController pushViewController:welcomeVC animated:YES];
+    }
+    else
+    {
+        // 登陆失败
+        [self.view makeToast:GLOBAL_STR(@"登陆失败，请检查输入")];
+        
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// 演示旋转屏的处理。
+- (void)changeConstraintsToPortrait:(UIInterfaceOrientation)orient
+{
+    self.topDistance.constant = 107.0f;
+    self.loginXRetion.constant = 0.0f;
+    self.loginYRelation.constant = 0.0f;
 }
-*/
+
+
+- (void)changeConstraintsToLandscape:(UIInterfaceOrientation)orient
+{
+    self.topDistance.constant = 50.0f;
+    self.loginXRetion.constant = 100.0f;
+    self.loginYRelation.constant = -50.0f;
+}
+
+// 演示网络变化的处理
+- (void)handleNetworkStatus:(BOOL)isAvailable
+{
+    if (!isAvailable)
+    {
+        [self.view makeToast:GLOBAL_STR(@"网络连接断开")];
+    }
+    else
+    {
+        [self.view makeToast:GLOBAL_STR(@"网络连接恢复")];
+    }
+}
+
+// 演示更换主题的处理
+- (void)reloadUIForTheme:(CustomThemeType)theme
+{
+    
+}
+
+// 演示国际化
+- (void)reloadUIForGlobal
+{
+    
+}
 
 @end
