@@ -7,6 +7,7 @@
 //
 
 #import "WQLanguage.h"
+#import "PublicDefines.h"
 
 @implementation WQLanguage
 
@@ -45,6 +46,9 @@ NSString *const WQLanguageIndentifier = @"WQLanguageIndentifier";
         
         // 切换到新的bundle
         [self loadBundleWithLanguage:language];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:LanguageChangedNotification
+                                                            object:nil];
         return YES;
     }
 }

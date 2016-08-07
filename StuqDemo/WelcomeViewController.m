@@ -24,22 +24,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = GLOBAL_STR(@"欢迎拥抱STUQ!");
 }
 
 
 - (IBAction)changeToChinese:(id)sender
 {
     [WQLanguage selectLanguage:WQLanguageCodes[0]];
-    [[NSNotificationCenter defaultCenter] postNotificationName:LanguageChangedNotification
-                                                        object:nil];
 }
 
 - (IBAction)changeToEnglish:(id)sender
 {
     [WQLanguage selectLanguage:WQLanguageCodes[1]];
-    [[NSNotificationCenter defaultCenter] postNotificationName:LanguageChangedNotification
-                                                        object:nil];
 }
 
 - (IBAction)postKickOut:(id)sender
@@ -50,12 +45,21 @@
 - (IBAction)whiteTheme:(id)sender
 {
     NSString *themeString = [NSString stringWithFormat:@"%@", @(CustomThemeTypeWhite)];
+
+    // 在基类进行KVO是另一种可以尝试的方案。
+    [[NSUserDefaults standardUserDefaults] setObject:themeString forKey:@"Theme"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:ThemeChangedNotification object:themeString];
 }
 
 - (IBAction)colorTheme:(id)sender
 {
     NSString *themeString = [NSString stringWithFormat:@"%@", @(CustomThemeTypeColor)];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:themeString forKey:@"Theme"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:ThemeChangedNotification object:themeString];
 }
 
@@ -91,7 +95,6 @@
     [super reloadUIForGlobal];
     
     self.title = GLOBAL_STR(@"欢迎拥抱STUQ!");
-    
     [self.switchToChinese setTitle:GLOBAL_STR(@"切换到中文") forState:UIControlStateNormal];
     [self.switchToEnglish setTitle:GLOBAL_STR(@"切换到英文") forState:UIControlStateNormal];
     [self.kickOut setTitle:GLOBAL_STR(@"模拟被T出通知") forState:UIControlStateNormal];

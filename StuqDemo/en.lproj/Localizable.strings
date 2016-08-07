@@ -6,7 +6,6 @@
   Copyright © 2016年 achen. All rights reserved.
 */
 
-
 "切换到中文" = "switch to Chinese";
 "白色主题" = "white theme";
 "欢迎拥抱STUQ!" = "Welcome to StuQ!";
@@ -21,6 +20,8 @@
 "彩色主题" = "color theme";
 "开启Hud" = "start hud";
 "停止Hud" = "stop hud";
-
-
-
+"加载中" = "Loading...";
+"加载结束" = "Loaded!";
+"登陆失败，请检查输入！" = "Login failed,please check inputs!";
+"网络连接断开" = "Network disconnected!";
+"网络连接恢复" = "Network connected!";

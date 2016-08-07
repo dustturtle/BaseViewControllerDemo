@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *accountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *passwordLabel;
 
+@property (strong, nonatomic) UIBarButtonItem * backItem;
+
 @end
 
 @implementation LoginViewController
@@ -29,11 +31,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
-    backItem.title = GLOBAL_STR(@"返回");
-    
-    self.navigationItem.backBarButtonItem = backItem;
-    self.title = GLOBAL_STR(@"登录");
+    self.backItem = [[UIBarButtonItem alloc] init];
+    self.backItem.title = GLOBAL_STR(@"返回");
+    self.navigationItem.backBarButtonItem = self.backItem;
     
     [self.accountInput becomeFirstResponder];
 }
@@ -49,7 +49,7 @@
     else
     {
         // 登陆失败
-        [self.view makeToast:GLOBAL_STR(@"登陆失败，请检查输入")];
+        [self.view makeToast:GLOBAL_STR(@"登陆失败，请检查输入！")];
         
     }
 }
@@ -102,6 +102,9 @@
 - (void)reloadUIForGlobal
 {
     [super reloadUIForGlobal];
+    
+    self.title = GLOBAL_STR(@"登录");
+    self.backItem.title = GLOBAL_STR(@"返回");
     
     self.accountLabel.text = GLOBAL_STR(@"账号");
     self.passwordLabel.text = GLOBAL_STR(@"密码");
