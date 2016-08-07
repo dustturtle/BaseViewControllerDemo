@@ -5,3 +5,22 @@
   Created by achen on 16/7/30.
   Copyright © 2016年 achen. All rights reserved.
 */
+
+
+"切换到中文" = "switch to Chinese";
+"白色主题" = "white theme";
+"欢迎拥抱STUQ!" = "Welcome to StuQ!";
+"返回" = "Back";
+"账号" = "account";
+"密码" = "password";
+"登录" = "login";
+
+"切换到英文" = "switch to English";
+"模拟被T出通知" = "mock kick out";
+"白色主题" = "white theme";
+"彩色主题" = "color theme";
+"开启Hud" = "start hud";
+"停止Hud" = "stop hud";
+
+
+

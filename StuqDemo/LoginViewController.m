@@ -16,12 +16,16 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *accountInput;
 @property (weak, nonatomic) IBOutlet UITextField *passwordInput;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UILabel *accountLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passwordLabel;
 
 @end
 
 @implementation LoginViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
@@ -82,12 +86,27 @@
 // 演示更换主题的处理
 - (void)reloadUIForTheme:(CustomThemeType)theme
 {
+    [super reloadUIForTheme:theme];
     
+    if (theme == CustomThemeTypeWhite)
+    {
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    else if (theme == CustomThemeTypeColor)
+    {
+        self.view.backgroundColor = [UIColor purpleColor];
+    }
 }
 
 // 演示国际化
 - (void)reloadUIForGlobal
 {
+    [super reloadUIForGlobal];
+    
+    self.accountLabel.text = GLOBAL_STR(@"账号");
+    self.passwordLabel.text = GLOBAL_STR(@"密码");
+    
+    [self.loginBtn setTitle:GLOBAL_STR(@"登录") forState:UIControlStateNormal];
     
 }
 

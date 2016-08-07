@@ -60,7 +60,6 @@ NSString *const WQLanguageIndentifier = @"WQLanguageIndentifier";
     NSString *currentLanguage = [self currentLanguageCode];
     NSArray *languages = WQLanguageCodes;
     [languages enumerateObjectsUsingBlock:^(NSString *language, NSUInteger index, BOOL * stop) {
-        
         if ([currentLanguage isEqualToString:language])
         {
             currentIndex = index;

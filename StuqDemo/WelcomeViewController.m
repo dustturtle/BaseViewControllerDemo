@@ -24,29 +24,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    self.title = @"欢迎拥抱STUQ!";
-    
-    self.view.backgroundColor = [UIColor purpleColor];
-    
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
-    backItem.title = @"返回";
-    self.navigationItem.backBarButtonItem = backItem;
-    
-    
+    self.title = GLOBAL_STR(@"欢迎拥抱STUQ!");
 }
 
 
 - (IBAction)changeToChinese:(id)sender
 {
+    [WQLanguage selectLanguage:WQLanguageCodes[0]];
     [[NSNotificationCenter defaultCenter] postNotificationName:LanguageChangedNotification
-                                                        object:WQLanguageCodes[0]];
+                                                        object:nil];
 }
 
 - (IBAction)changeToEnglish:(id)sender
 {
+    [WQLanguage selectLanguage:WQLanguageCodes[1]];
     [[NSNotificationCenter defaultCenter] postNotificationName:LanguageChangedNotification
-                                                        object:WQLanguageCodes[1]];
+                                                        object:nil];
 }
 
 - (IBAction)postKickOut:(id)sender
@@ -68,13 +61,13 @@
 
 - (IBAction)startLoading:(id)sender
 {
-    [self showHUDWithText:@"加载中"];
+    [self showHUDWithText:GLOBAL_STR(@"加载中")];
     
 }
 
 - (IBAction)stopLoading:(id)sender
 {
-    [self hideHUDWithText:@"加载结束"];
+    [self hideHUDWithText:GLOBAL_STR(@"加载结束")];
 }
 
 // 演示更换主题的处理
@@ -97,7 +90,15 @@
 {
     [super reloadUIForGlobal];
     
+    self.title = GLOBAL_STR(@"欢迎拥抱STUQ!");
+    
     [self.switchToChinese setTitle:GLOBAL_STR(@"切换到中文") forState:UIControlStateNormal];
+    [self.switchToEnglish setTitle:GLOBAL_STR(@"切换到英文") forState:UIControlStateNormal];
+    [self.kickOut setTitle:GLOBAL_STR(@"模拟被T出通知") forState:UIControlStateNormal];
+    [self.whiteTheme setTitle:GLOBAL_STR(@"白色主题") forState:UIControlStateNormal];
+    [self.colorTheme setTitle:GLOBAL_STR(@"彩色主题") forState:UIControlStateNormal];
+    [self.startHud setTitle:GLOBAL_STR(@"开启Hud") forState:UIControlStateNormal];
+    [self.stopHud setTitle:GLOBAL_STR(@"停止Hud") forState:UIControlStateNormal];
 }
 
 @end
