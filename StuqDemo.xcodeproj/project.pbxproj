@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6867DE041AE48327A32A60AC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B86178A58E5949DA18FFBA1A /* libPods.a */; };
+		7A81A2EA7DD1DB737C997A69 /* libPods-StuqDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71723784390CA886E1356CD /* libPods-StuqDemo.a */; };
 		8E02475E1D55897900859EF9 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02475D1D55897900859EF9 /* UIView+Toast.m */; };
 		8E07F7A01D55C67C0069FC07 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F79E1D55C67C0069FC07 /* WelcomeViewController.m */; };
 		8E07F7A11D55C67C0069FC07 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E07F79F1D55C67C0069FC07 /* WelcomeViewController.xib */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37024257500629DE7EAA1930 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		27D96CB1367293E629FACD6E /* Pods-StuqDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuqDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo.release.xcconfig"; sourceTree = "<group>"; };
 		8E02475C1D55897900859EF9 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		8E02475D1D55897900859EF9 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		8E07F79D1D55C67C0069FC07 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 		8EFF50A21D4C80F3001196B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EFF50A51D4C80F3001196B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EFF50A71D4C80F3001196B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A39B66BD8AEBB9EFEC355BC1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		B86178A58E5949DA18FFBA1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71723784390CA886E1356CD /* libPods-StuqDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StuqDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC9408C167A9A15F24E65E3C /* Pods-StuqDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuqDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,28 +60,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6867DE041AE48327A32A60AC /* libPods.a in Frameworks */,
+				7A81A2EA7DD1DB737C997A69 /* libPods-StuqDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CD84EFCD309BBD3CB95512B /* Pods */ = {
+		320D673C4862D32F90BAADA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A39B66BD8AEBB9EFEC355BC1 /* Pods.debug.xcconfig */,
-				37024257500629DE7EAA1930 /* Pods.release.xcconfig */,
+				A71723784390CA886E1356CD /* libPods-StuqDemo.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8E02475B1D55897900859EF9 /* toast */ = {
+		8E02475B1D55897900859EF9 /* Toast */ = {
 			isa = PBXGroup;
 			children = (
 				8E02475C1D55897900859EF9 /* UIView+Toast.h */,
 				8E02475D1D55897900859EF9 /* UIView+Toast.m */,
 			);
+			name = Toast;
 			path = toast;
 			sourceTree = "<group>";
 		};
@@ -125,8 +125,8 @@
 			children = (
 				8EFF50951D4C80F3001196B1 /* StuqDemo */,
 				8EFF50941D4C80F3001196B1 /* Products */,
-				3CD84EFCD309BBD3CB95512B /* Pods */,
-				B46E8AE2AD776B11D8117AF5 /* Frameworks */,
+				E242493F52DEF927890B3712 /* Pods */,
+				320D673C4862D32F90BAADA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				8E07F7A21D55D06B0069FC07 /* Resources */,
-				8E02475B1D55897900859EF9 /* toast */,
+				8E02475B1D55897900859EF9 /* Toast */,
 				8EF576E41D4CA6DD008F4CED /* Connection */,
 				8EF576E01D4C9E7F008F4CED /* Base */,
 				8EF576DC1D4C9DD5008F4CED /* Global */,
@@ -172,12 +172,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B46E8AE2AD776B11D8117AF5 /* Frameworks */ = {
+		E242493F52DEF927890B3712 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B86178A58E5949DA18FFBA1A /* libPods.a */,
+				EC9408C167A9A15F24E65E3C /* Pods-StuqDemo.debug.xcconfig */,
+				27D96CB1367293E629FACD6E /* Pods-StuqDemo.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,12 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EFF50AA1D4C80F3001196B1 /* Build configuration list for PBXNativeTarget "StuqDemo" */;
 			buildPhases = (
-				02112EB8E53CBFDB48CE81B6 /* Check Pods Manifest.lock */,
+				B23FC4001A4253C206DF5C76 /* [CP] Check Pods Manifest.lock */,
 				8EFF508F1D4C80F3001196B1 /* Sources */,
 				8EFF50901D4C80F3001196B1 /* Frameworks */,
 				8EFF50911D4C80F3001196B1 /* Resources */,
-				E623BBE3BCAFB114AC47E4BC /* Embed Pods Frameworks */,
-				51E3FBF2B262984B8D9C5C58 /* Copy Pods Resources */,
+				6E5FDC077A863C4A7F4A205B /* [CP] Embed Pods Frameworks */,
+				C4E0D9E02903C7455C6A6A98 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,14 +254,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02112EB8E53CBFDB48CE81B6 /* Check Pods Manifest.lock */ = {
+		6E5FDC077A863C4A7F4A205B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B23FC4001A4253C206DF5C76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,34 +284,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		51E3FBF2B262984B8D9C5C58 /* Copy Pods Resources */ = {
+		C4E0D9E02903C7455C6A6A98 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E623BBE3BCAFB114AC47E4BC /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -357,7 +358,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZK Network (ZT4WJE6265)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZK Network (ZT4WJE6265)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -379,6 +381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "a1a0815b-b50c-4541-8ccf-6805922e6815";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -401,7 +404,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZK Network (ZT4WJE6265)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: ZK Network (ZT4WJE6265)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -416,6 +420,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "a1a0815b-b50c-4541-8ccf-6805922e6815";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -423,10 +428,10 @@
 		};
 		8EFF50AB1D4C80F3001196B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A39B66BD8AEBB9EFEC355BC1 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = EC9408C167A9A15F24E65E3C /* Pods-StuqDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZK Network (ZT4WJE6265)";
 				INFOPLIST_FILE = StuqDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -439,10 +444,10 @@
 		};
 		8EFF50AC1D4C80F3001196B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37024257500629DE7EAA1930 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 27D96CB1367293E629FACD6E /* Pods-StuqDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZK Network (ZT4WJE6265)";
 				INFOPLIST_FILE = StuqDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
