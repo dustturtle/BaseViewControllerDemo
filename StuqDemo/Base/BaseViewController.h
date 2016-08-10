@@ -18,7 +18,7 @@
 //  宗旨：全局性viewcontroller可以共有的且应该属于viewcontroller处理范畴内的任务，放到基类来做。
 //
 //  其他适合放到基类的任务举例：
-//  router方案：自动注册基类，处理url跳转等。 （此处内容较多，demo未实现）
+//  TODO: router方案：自动注册基类，处理url跳转等。 （此处内容较多，demo未实现）
 //  参考：UMViewController，https://github.com/gaosboy/urlmanager
 //
 //  Created by achen on 16/7/30.

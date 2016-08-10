@@ -48,7 +48,7 @@
     
     // 这里的麻烦之处在于IB的国际化；我们并未生成2个不同的IB文件，因此需要刷新一些值的内容；所以在这里有这个方法调用。
     [self reloadUIForGlobal];
-    // 5. 页面打点
+    // 5. 页面打点 TODO:引入mobclick相关的库
     //[MobClick beginLogPageView:NSStringFromClass([self class])];
     
     // fixing the rotate bugs, ios7 & ios 8  ok!
@@ -222,7 +222,7 @@
 
 - (void)backToLogin
 {
-    // 这里简单回到根页面。
+    // !!!这里简单回到根页面。
     [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
