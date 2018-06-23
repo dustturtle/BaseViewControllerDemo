@@ -112,6 +112,7 @@
 //  3. 便捷调用HUD
 - (void)showHUD
 {
+
     if (self.innerHUD == nil)
     {
         self.innerHUD = [MBProgressHUD showHUDAddedTo:self.view animated:YES];

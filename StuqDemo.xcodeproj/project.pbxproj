@@ -14,6 +14,21 @@
 		8E07F7A41D55D06B0069FC07 /* stuq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E07F7A31D55D06B0069FC07 /* stuq@2x.png */; };
 		8E0BEAA51D4DBB57008FC2DE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BEAA31D4DBB57008FC2DE /* LoginViewController.m */; };
 		8E0BEAA61D4DBB57008FC2DE /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0BEAA41D4DBB57008FC2DE /* LoginViewController.xib */; };
+		8E60BCBA1D5B5DB80046C4DB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02475D1D55897900859EF9 /* UIView+Toast.m */; };
+		8E60BCBB1D5B5DB80046C4DB /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF576E21D4C9E7F008F4CED /* BaseViewController.m */; };
+		8E60BCBC1D5B5DB80046C4DB /* LocalConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF576E61D4CA6DD008F4CED /* LocalConnection.m */; };
+		8E60BCBD1D5B5DB80046C4DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF509A1D4C80F3001196B1 /* AppDelegate.m */; };
+		8E60BCBE1D5B5DB80046C4DB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0BEAA31D4DBB57008FC2DE /* LoginViewController.m */; };
+		8E60BCBF1D5B5DB80046C4DB /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E07F79E1D55C67C0069FC07 /* WelcomeViewController.m */; };
+		8E60BCC01D5B5DB80046C4DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF50971D4C80F3001196B1 /* main.m */; };
+		8E60BCC11D5B5DB80046C4DB /* WQLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF576DE1D4C9DD5008F4CED /* WQLanguage.m */; };
+		8E60BCC31D5B5DB80046C4DB /* libPods-StuqDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71723784390CA886E1356CD /* libPods-StuqDemo.a */; };
+		8E60BCC71D5B5DB80046C4DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF50A41D4C80F3001196B1 /* LaunchScreen.storyboard */; };
+		8E60BCC81D5B5DB80046C4DB /* stuq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E07F7A31D55D06B0069FC07 /* stuq@2x.png */; };
+		8E60BCC91D5B5DB80046C4DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EF576D91D4C9D16008F4CED /* Localizable.strings */; };
+		8E60BCCA1D5B5DB80046C4DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EFF50A21D4C80F3001196B1 /* Assets.xcassets */; };
+		8E60BCD51D5B5DBB0046C4DB /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E60BCD31D5B5DBB0046C4DB /* WelcomeViewController.xib */; };
+		8E60BCD61D5B5DBB0046C4DB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E60BCD41D5B5DBB0046C4DB /* LoginViewController.xib */; };
 		8EF576D71D4C9D16008F4CED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EF576D91D4C9D16008F4CED /* Localizable.strings */; };
 		8EF576DF1D4C9DD5008F4CED /* WQLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF576DE1D4C9DD5008F4CED /* WQLanguage.m */; };
 		8EF576E31D4C9E7F008F4CED /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF576E21D4C9E7F008F4CED /* BaseViewController.m */; };
@@ -35,6 +50,10 @@
 		8E0BEAA21D4DBB57008FC2DE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		8E0BEAA31D4DBB57008FC2DE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8E0BEAA41D4DBB57008FC2DE /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8E60BCD01D5B5DB80046C4DB /* StuqDemo-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StuqDemo-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E60BCD21D5B5DB80046C4DB /* StuqDemo copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "StuqDemo copy-Info.plist"; path = "/Users/Achen/Desktop/githubRepos/BaseViewControllerDemo/StuqDemo copy-Info.plist"; sourceTree = "<absolute>"; };
+		8E60BCD31D5B5DBB0046C4DB /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WelcomeViewController.xib; path = "Resources-iPad/StuqDemo/WelcomeViewController.xib"; sourceTree = "<group>"; };
+		8E60BCD41D5B5DBB0046C4DB /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = "Resources-iPad/StuqDemo/LoginViewController.xib"; sourceTree = "<group>"; };
 		8EF576D21D4C8EAD008F4CED /* PublicDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDefines.h; sourceTree = "<group>"; };
 		8EF576DA1D4C9D18008F4CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8EF576DB1D4C9D7A008F4CED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -56,6 +75,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E60BCC21D5B5DB80046C4DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E60BCC31D5B5DB80046C4DB /* libPods-StuqDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EFF50901D4C80F3001196B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +120,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8E60BCD11D5B5DB80046C4DB /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				8E60BCD31D5B5DBB0046C4DB /* WelcomeViewController.xib */,
+				8E60BCD41D5B5DBB0046C4DB /* LoginViewController.xib */,
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
 		8EF576DC1D4C9DD5008F4CED /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +159,12 @@
 		8EFF508A1D4C80F3001196B1 = {
 			isa = PBXGroup;
 			children = (
+				8E60BCD11D5B5DB80046C4DB /* Resources-iPad */,
 				8EFF50951D4C80F3001196B1 /* StuqDemo */,
 				8EFF50941D4C80F3001196B1 /* Products */,
 				E242493F52DEF927890B3712 /* Pods */,
 				320D673C4862D32F90BAADA3 /* Frameworks */,
+				8E60BCD21D5B5DB80046C4DB /* StuqDemo copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				8EFF50931D4C80F3001196B1 /* StuqDemo.app */,
+				8E60BCD01D5B5DB80046C4DB /* StuqDemo-iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +223,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E60BCB71D5B5DB80046C4DB /* StuqDemo-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E60BCCD1D5B5DB80046C4DB /* Build configuration list for PBXNativeTarget "StuqDemo-iPad" */;
+			buildPhases = (
+				8E60BCB81D5B5DB80046C4DB /* [CP] Check Pods Manifest.lock */,
+				8E60BCB91D5B5DB80046C4DB /* Sources */,
+				8E60BCC21D5B5DB80046C4DB /* Frameworks */,
+				8E60BCC41D5B5DB80046C4DB /* Resources */,
+				8E60BCCB1D5B5DB80046C4DB /* [CP] Embed Pods Frameworks */,
+				8E60BCCC1D5B5DB80046C4DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StuqDemo-iPad";
+			productName = StuqDemo;
+			productReference = 8E60BCD01D5B5DB80046C4DB /* StuqDemo-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8EFF50921D4C80F3001196B1 /* StuqDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EFF50AA1D4C80F3001196B1 /* Build configuration list for PBXNativeTarget "StuqDemo" */;
@@ -233,11 +292,25 @@
 			projectRoot = "";
 			targets = (
 				8EFF50921D4C80F3001196B1 /* StuqDemo */,
+				8E60BCB71D5B5DB80046C4DB /* StuqDemo-iPad */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E60BCC41D5B5DB80046C4DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E60BCD51D5B5DBB0046C4DB /* WelcomeViewController.xib in Resources */,
+				8E60BCC71D5B5DB80046C4DB /* LaunchScreen.storyboard in Resources */,
+				8E60BCD61D5B5DBB0046C4DB /* LoginViewController.xib in Resources */,
+				8E60BCC81D5B5DB80046C4DB /* stuq@2x.png in Resources */,
+				8E60BCC91D5B5DB80046C4DB /* Localizable.strings in Resources */,
+				8E60BCCA1D5B5DB80046C4DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EFF50911D4C80F3001196B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +340,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E60BCB81D5B5DB80046C4DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E60BCCB1D5B5DB80046C4DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E60BCCC1D5B5DB80046C4DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StuqDemo/Pods-StuqDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B23FC4001A4253C206DF5C76 /* [CP] Check Pods Manifest.lock */ = {
@@ -302,6 +420,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E60BCB91D5B5DB80046C4DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E60BCBA1D5B5DB80046C4DB /* UIView+Toast.m in Sources */,
+				8E60BCBB1D5B5DB80046C4DB /* BaseViewController.m in Sources */,
+				8E60BCBC1D5B5DB80046C4DB /* LocalConnection.m in Sources */,
+				8E60BCBD1D5B5DB80046C4DB /* AppDelegate.m in Sources */,
+				8E60BCBE1D5B5DB80046C4DB /* LoginViewController.m in Sources */,
+				8E60BCBF1D5B5DB80046C4DB /* WelcomeViewController.m in Sources */,
+				8E60BCC01D5B5DB80046C4DB /* main.m in Sources */,
+				8E60BCC11D5B5DB80046C4DB /* WQLanguage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EFF508F1D4C80F3001196B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +473,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8E60BCCE1D5B5DB80046C4DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC9408C167A9A15F24E65E3C /* Pods-StuqDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZK Network (ZT4WJE6265)";
+				INFOPLIST_FILE = "StuqDemo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = test.StuqDemo;
+				PRODUCT_NAME = "StuqDemo-iPad";
+				PROVISIONING_PROFILE = "a1a0815b-b50c-4541-8ccf-6805922e6815";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8E60BCCF1D5B5DB80046C4DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D96CB1367293E629FACD6E /* Pods-StuqDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZK Network (ZT4WJE6265)";
+				INFOPLIST_FILE = "StuqDemo copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = test.StuqDemo;
+				PRODUCT_NAME = "StuqDemo-iPad";
+				PROVISIONING_PROFILE = "a1a0815b-b50c-4541-8ccf-6805922e6815";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 		8EFF50A81D4C80F3001196B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +628,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E60BCCD1D5B5DB80046C4DB /* Build configuration list for PBXNativeTarget "StuqDemo-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E60BCCE1D5B5DB80046C4DB /* Debug */,
+				8E60BCCF1D5B5DB80046C4DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8EFF508E1D4C80F3001196B1 /* Build configuration list for PBXProject "StuqDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
